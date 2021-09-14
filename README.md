@@ -18,6 +18,7 @@
 2. [Acerca del Proyecto](#About)
 - [Licencias](#License)
 - [Documentacion](#Documentation)
+- [Vistas Previas](#Preview)
 
 ---
 <a name = "Details"></a>
@@ -68,5 +69,24 @@ También, esta vista podrá ser administrada por la secretaria, persona la cuál
 - [Trello](https://www.notion.so/PROYECTO-C-TEDRA-FASE-1-95c19c6cd200410bb5ad1fbe29b6f0f2)
 - Vista previa de diseños
 1. [Carpeta con diseños](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/tree/master/Preview)
-2. [Vista Previa](#Previews)
-- [Perfil de Proyecto]()
+2. [Vista Previa](#Preview)
+- [Perfil de Proyecto](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Documentos/Perfil%20de%20Proyecto1.pdf)
+
+<a name = "Preview"></a>
+
+## Vista previa (creado con Adobe XD)
+
+![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Assets_old/LoginWindow.png?raw=true)
+
+<br>
+
+![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Assets_old/MainPage.png?raw=true)
+***NOTA:*** Cabe destacar que la barra lateral siempre estara disponible, al presiona una opcion se podra visualizar una de las paginas a continuacion (como pagina inicial la pagina de abajo:arrow_double_down:)
+
+![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Assets_old/HomePage.png?raw=true)
+
+![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Assets_old/AppointmentsPage.png?raw=true)
+
+![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Assets_old/PatientsPage.png?raw=true)
+
+`Mas vistas en un futuro`
