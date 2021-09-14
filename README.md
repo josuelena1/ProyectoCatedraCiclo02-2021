@@ -51,7 +51,9 @@ También, esta vista podrá ser administrada por la secretaria, persona la cuál
  
 <a name = "License"></a>
 
-## Licencias
+## Licencias Creative Commons
+
+![](https://licensebuttons.net/l/by-sa/3.0/88x31.png)
 
  "Dental Clinic عيادة أسنان بلندن" by Hossam el-Hamalawy حسام الحملاوي is licensed with CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/
 
@@ -64,4 +66,7 @@ También, esta vista podrá ser administrada por la secretaria, persona la cuál
 ## Documentacion
 
 - [Trello](https://www.notion.so/PROYECTO-C-TEDRA-FASE-1-95c19c6cd200410bb5ad1fbe29b6f0f2)
--
+- Vista previa de diseños
+1. [Carpeta con diseños](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/tree/master/Preview)
+2. [Vista Previa](#Previews)
+- [Perfil de Proyecto]()
