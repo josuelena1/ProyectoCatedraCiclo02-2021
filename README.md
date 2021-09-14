@@ -53,6 +53,7 @@ También, esta vista podrá ser administrada por la secretaria, persona la cuál
 <a name = "License"></a>
 
 ## Licencias Creative Commons
+## Licencia implementada en el proyecto
 
 [**CC BY-SA**](https://creativecommons.org/licenses/by-sa/4.0/)
 
