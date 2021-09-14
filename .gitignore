@@ -4,6 +4,8 @@
 # User-specific folders
 
 # User-specific files
+*.xd
+*.ai
 *.suo
 *.user
 *.userosscache
