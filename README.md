@@ -4,7 +4,6 @@
 #### • POO104 Programación Orientada a Objetos
 #### • MDB104 Modelamiento y Diseño de Bases de Datos.
 
-
 ---
 ## Integrantes:
 - CD210488 Jairo Rafael Colocho Díaz
