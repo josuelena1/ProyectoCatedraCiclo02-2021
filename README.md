@@ -1,4 +1,4 @@
-## :arrow_down_small:Antes de leer (desarrolladores solamente):arrow_down_small:
+## :arrow_down_small:Antes de desarrollar (colaboradores solamente):arrow_down_small:
 **Recuerde hacer siempre:**
 <br>
 1. Cambiar a rama personal _ANTES DE TRABAJAR_.
