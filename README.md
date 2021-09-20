@@ -5,7 +5,7 @@
 2. Realizar un `git pull origin master` antes de iniciar para revisar si existe algun tipo de cambio en el codigo.
 3. Antes de unir (`merge`) las ramas personales con master, cree un pull request **desde _GitHub_**, señalando el tipo de cambio realizado en el repositorio y espere a que sea aprobado.
 
-Tambien debe comprobar los requisitos de desarrollo de la aplicacion antes de comenzar.
+Tambien debe comprobar los [requisitos de desarrollo de la aplicacion](#DevReq) antes de comenzar.
 
 
 # Administrador de Clinica Dental
@@ -24,12 +24,16 @@ Tambien debe comprobar los requisitos de desarrollo de la aplicacion antes de co
 ---
 
 ## Secciones
+### General
 - [Detalles](#Details)
 1. [Asignacion](#Asignation)
 2. [Acerca del Proyecto](#About)
 - [Licencias](#License)
 - [Documentacion](#Documentation)
 - [Vistas Previas](#Preview)
+
+### Desarrolladores
+- [Requisitos](#DevReq)
 
 ---
 <a name = "Details"></a>
@@ -117,3 +121,12 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 ![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Assets_old/PatientsPage.png?raw=true)
 
 `Mas vistas en un futuro`
+
+# Desarrolladores
+
+<a name = "DevReq">
+
+## Requisitos
+| Nombre del Requisito | Version             | Descripcion                                                 |
+| -------------------- | ------------------- | ----------------------------------------------------------- |
+| Windows 10 _(no NT)_ | v2004 (comp. 19041) | [Modo de programador](mssettings:developers) activado       |
