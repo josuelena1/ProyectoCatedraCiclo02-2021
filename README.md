@@ -118,7 +118,7 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 
 ![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Resources_old/AppointmentsPage.png?raw=true)
 
-![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Rssets_old/PatientsPage.png?raw=true)
+![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Resources_old/PatientsPage.png?raw=true)
 
 `Mas vistas en un futuro`
 
