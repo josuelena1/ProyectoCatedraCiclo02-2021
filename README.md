@@ -107,16 +107,16 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 
 ## Vista previa (creado con Adobe XD)
 
-![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Assets_old/LoginWindow.png?raw=true)
+![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Resources_old/LoginWindow.png?raw=true)
 
 <br>
 
-![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Assets_old/MainPage.png?raw=true)
+![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Resources_old/MainPage.png?raw=true)
 ***NOTA:*** Cabe destacar que la barra lateral siempre estara disponible, al presiona una opcion se podra visualizar una de las paginas a continuacion (como pagina inicial la pagina de abajo:arrow_double_down:)
 
-![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Assets_old/HomePage.png?raw=true)
+![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Resources_old/HomePage.png?raw=true)
 
-![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Assets_old/AppointmentsPage.png?raw=true)
+![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Resources_old/AppointmentsPage.png?raw=true)
 
 ![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Assets_old/PatientsPage.png?raw=true)
 
