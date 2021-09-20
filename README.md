@@ -118,7 +118,7 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 
 ![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Resources_old/AppointmentsPage.png?raw=true)
 
-![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Assets_old/PatientsPage.png?raw=true)
+![alt text](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Rssets_old/PatientsPage.png?raw=true)
 
 `Mas vistas en un futuro`
 
@@ -129,4 +129,4 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 ## Requisitos
 | Nombre del Requisito | Version             |Descripcion                                                          |
 | -------------------- | ------------------- | ------------------------------------------------------------------- |
-| Windows 10 _(no NT)_ | v2004 (comp. 19041) | <a href = "ms-settings:developers"> Modo de programador</a> activado|
+| Windows 10 _(no NT)_ | v2004 (comp. 19041) | <a href = "https://bit.ly/3lKi5BX">Modo de programador</a> activado |
