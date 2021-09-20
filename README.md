@@ -1,3 +1,13 @@
+## :arrow_down_small:Antes de leer (desarrolladores solamente):arrow_down_small:
+**Recuerde hacer siempre:**
+<br>
+1. Cambiar a rama personal _ANTES DE TRABAJAR_.
+2. Realizar un `git pull origin master` antes de iniciar para revisar si existe algun tipo de cambio en el codigo.
+3. Antes de unir (`merge`) las ramas personales con master, cree un pull request **desde _GitHub_**, señalando el tipo de cambio realizado en el repositorio y espere a que sea aprobado.
+
+Tambien debe comprobar los requisitos de desarrollo de la aplicacion antes de comenzar.
+
+
 # Administrador de Clinica Dental
 ### **Ciclo II / 2021**
 ## Proyecto de Catedra para:
