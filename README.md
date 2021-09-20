@@ -127,6 +127,6 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 <a name = "DevReq">
 
 ## Requisitos
-| Nombre del Requisito | Version             | Descripcion                                                 |
-| -------------------- | ------------------- | ----------------------------------------------------------- |
-| Windows 10 _(no NT)_ | v2004 (comp. 19041) | [Modo de programador](mssettings:developers) activado       |
+| Nombre del Requisito | Version             |Descripcion                                                          |
+| -------------------- | ------------------- | ------------------------------------------------------------------- |
+| Windows 10 _(no NT)_ | v2004 (comp. 19041) | <a href = "ms-settings:developers"> Modo de programador</a> activado|
