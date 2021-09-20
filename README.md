@@ -1,3 +1,13 @@
+## :arrow_down_small:Antes de leer (desarrolladores solamente):arrow_down_small:
+**Recuerde hacer siempre:**
+<br>
+1. Cambiar a rama personal _ANTES DE TRABAJAR_.
+2. Realizar un `git pull origin master` antes de iniciar para revisar si existe algun tipo de cambio en el codigo.
+3. Antes de unir (`merge`) las ramas personales con master, cree un pull request **desde _GitHub_**, señalando el tipo de cambio realizado en el repositorio y espere a que sea aprobado.
+
+Tambien debe comprobar los requisitos de desarrollo de la aplicacion antes de comenzar.
+
+
 # Administrador de Clinica Dental
 ### **Ciclo II / 2021**
 ## Proyecto de Catedra para:
@@ -49,12 +59,12 @@ El proyecto está planeado desarrollarse de la siguiente manera:
 Esta aplicación espera dividirse en dos partes: Por un lado, la vista de la clínica, la cual puede ser administrado ya sea por el médico de la clínica, quien podrá ver una vista previa de las citas previas y próximas, el tipo de servicio que se le estará realizando a cada paciente y dejar observaciones de la cita del paciente. 
 También, esta vista podrá ser administrada por la secretaria, persona la cuál podrá agregar pacientes al registro, registrar el servicio que se le realizará, agendar, verificar y postergar citas cuando se le solicite.
 
-`(En estado de prueba)`*(aplicacion para Android)* También podría existir una vista para el cliente de dicha clínica, esta vista podría disponer de un calendario de citas, el tipo de servicio que le están realizando con su debida descripción, un feed de noticias e incluso notificar una cita entrante.
+`(Listo para utilizar)`*(aplicacion para Android)* También podría existir una vista para el cliente de dicha clínica, esta vista podría disponer de un calendario de citas, el tipo de servicio que le están realizando con su debida descripción, un feed de noticias e incluso notificar una cita entrante.
  
 <a name = "License"></a>
 
 ## Licencias Creative Commons
-## Licencia implementada en el proyecto
+### Licencia implementada en el proyecto
 
 [**CC BY-SA**](https://creativecommons.org/licenses/by-sa/4.0/)
 
@@ -76,9 +86,17 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 ## Documentacion
 
 - [Notion](https://www.notion.so/PROYECTO-C-TEDRA-FASE-1-95c19c6cd200410bb5ad1fbe29b6f0f2)
-- Vista previa de diseños
-1. [Carpeta con diseños](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/tree/master/Preview)
-2. [Vista Previa](#Preview)
+<br>
+
+- Vista previa de diseños:
+
+| Opciones | Link |
+| -------- | ---- |
+| Carpeta con diseños | [Click Aqui](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/tree/master/Preview) |
+| Vista previa | [Click Aqui](#Preview)|
+
+<br>
+
 - [Perfil de Proyecto](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/blob/master/Documentos/Perfil%20de%20Proyecto1.pdf)
 
 <a name = "Preview"></a>
