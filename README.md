@@ -69,11 +69,17 @@ También, esta vista podrá ser administrada por la secretaria, persona la cuál
 <a name = "License"></a>
 
 ## Licencias Creative Commons
-### Licencia implementada en el proyecto
 
-[**CC BY-SA**](https://creativecommons.org/licenses/by-sa/4.0/)
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-![](https://licensebuttons.net/l/by-sa/3.0/88x31.png)
+Este proyecto esta licenciado por la
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo incluso con fines comerciales, siempre que le otorguen crédito y licencian sus nuevas creaciones bajo los mismos términos. Esta licencia a menudo se compara con licencias de software de código abierto y gratuitas "copyleft". Todos los trabajos nuevos basados ​​en el suyo llevarán la misma licencia, por lo que cualquier derivado también permitirá el uso comercial. Esta es la licencia utilizada por Wikipedia y se recomienda para materiales que se beneficiarían de la incorporación de contenido de Wikipedia y proyectos con licencias similares.
 
