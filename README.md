@@ -127,6 +127,10 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 <a name = "DevReq">
 
 ## Requisitos
-| Nombre del Requisito | Version             |Descripcion                                                          |
-| -------------------- | ------------------- | ------------------------------------------------------------------- |
-| Windows 10 _(no NT)_ | v2004 (comp. 19041) | <a href = "https://bit.ly/3lKi5BX">Modo de programador</a> activado |
+| Nombre del Requisito | Version             |Descripcion                                                                         |
+| -------------------- | ------------------- | ---------------------------------------------------------------------------------- |
+| Windows 10 _(no NT)_ | v2004 (comp. 19041) | <a href = "https://bit.ly/3lKi5BX">Modo de programador</a> activado                |
+| Visual Studio        | 2017 o posterior    | VS 2019 o VS 2022 PRE es recomendable debido versiones de extensiones a extensiones|
+| Windows App SDK      | 0.8 Stable          | Disponible en [VS Marketplace](https://bit.ly/3hRsR8F), tambien en _Extensiones > Administrar extensiones_ en Visual Studio      |
+| SQL Server Developer | Mas reciente (2019) | Desde SQL Server Configuration Manager, habilitar las conexiones TCP/IP con el puerto predeterminado (1433) y tambien las tuberias con nombre (Name Pipes, para transmitir informacion con nombres para evitar errores) |
+| SSMS                 | Mas reciente        | Dentro de SSMS, cambiar contraseña al usuario [sa] y ademas habilitar las conexiones con SQL Server Login (no se usara Autenticacion de Windows) y ademas habilitar conexiones remotas al servidor |
