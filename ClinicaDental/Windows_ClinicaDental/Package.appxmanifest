@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="67649e0c-d5ea-44a3-b989-634b638df74f"
-    Publisher="CN=oscar"
-    Version="1.0.0.0" />
+    Name="G05T-ClinicaDental-DoctorTeeth"
+    Publisher="CN=G05T"
+    Version="0.1.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="67649e0c-d5ea-44a3-b989-634b638df74f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Windows_ClinicaDental</DisplayName>
-    <PublisherDisplayName>oscar</PublisherDisplayName>
+    <DisplayName>DentalClinicAdminDocTeeth</DisplayName>
+    <PublisherDisplayName>G05T</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -32,18 +32,26 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="Windows_ClinicaDental.App">
       <uap:VisualElements
-        DisplayName="Windows_ClinicaDental"
+        DisplayName="Administrador de Clinica Dental (Doctor Teeth)"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="Windows_ClinicaDental"
+        Description="Aplicacion que permite administrar los clientes y servicios de una clinica dental. Ademas tiene la capacidad de agendar las citas."
         BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\Square71x71Logo.png" Square310x310Logo="Assets\Square310x310Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square310x310Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
+        <uap:SplashScreen Image="Assets\SplashScreen.png"  BackgroundColor="#DBEFF9"/>
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/>
+          <uap:Rotation Preference="landscapeFlipped"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>
 
   <Capabilities>
     <Capability Name="internetClient" />
+    <Capability Name="internetClientServer"/>
   </Capabilities>
 </Package>

@@ -3,6 +3,10 @@
 
 # User-specific folders
 
+#SQL SERVER Database Files
+*.mdf
+*.ldf
+
 # User-specific files
 *.xd
 *.ai

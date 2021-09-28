@@ -7,6 +7,8 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Graphics.Display;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -39,6 +41,9 @@ namespace Windows_ClinicaDental
         /// <param name="e">Información detallada acerca de la solicitud y el proceso de inicio.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+
+            MaximizeWindowOnLoad();
+            ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size(900, 600));
             Frame rootFrame = Window.Current.Content as Frame;
 
             // No repetir la inicialización de la aplicación si la ventana tiene contenido todavía,
@@ -73,12 +78,28 @@ namespace Windows_ClinicaDental
             }
         }
 
-        /// <summary>
-        /// Se invoca cuando la aplicación la inicia normalmente el usuario final. Se usarán otros puntos
-        /// </summary>
-        /// <param name="sender">Marco que produjo el error de navegación</param>
-        /// <param name="e">Detalles sobre el error de navegación</param>
-        void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
+        public static void MaximizeWindowOnLoad()
+        {
+            var view = DisplayInformation.GetForCurrentView();
+
+            // Obtiene la resolucion de la pantalla
+            var resolution = new Size(view.ScreenWidthInRawPixels, view.ScreenHeightInRawPixels);
+
+            // Calcula el tamaño de la pantalla (ignora la barra de tareas)
+            var scale = view.ResolutionScale == ResolutionScale.Invalid ? 1 : view.RawPixelsPerViewPixel;
+            var bounds = new Size(resolution.Width / scale, resolution.Height / scale);
+            //Maximiza la ventana
+            ApplicationView.PreferredLaunchViewSize = new Size(bounds.Width, bounds.Height);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            ApplicationView.GetForCurrentView().TryResizeView(bounds);
+        }
+
+            /// <summary>
+            /// Se invoca cuando la aplicación la inicia normalmente el usuario final. Se usarán otros puntos
+            /// </summary>
+            /// <param name="sender">Marco que produjo el error de navegación</param>
+            /// <param name="e">Detalles sobre el error de navegación</param>
+            void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
         {
             throw new Exception("Failed to load Page " + e.SourcePageType.FullName);
         }

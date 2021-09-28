@@ -7,9 +7,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    SizeChanged="Page_SizeChanged">
     <Grid>
-
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Lo sentimos.&#xa;Tu pantalla es demasiado pequeña."
+                   FontSize="30" TextAlignment="Center"
+                   Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="La resolucion minima para utilizar&#xa;esta aplicacion es de 1024x768."
+                   FontSize="20" TextAlignment="Center"
+                   Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+        <Frame x:Name="content"/>
+        <muxc:InfoBar x:Name="notifBar" IsOpen="False"
+                      Margin="15,15" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
     </Grid>
 </Page>

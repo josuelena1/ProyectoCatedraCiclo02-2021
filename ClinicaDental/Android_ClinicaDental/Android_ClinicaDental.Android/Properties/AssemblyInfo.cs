@@ -6,11 +6,11 @@ using Android.App;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Android_ClinicaDental.Android")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Doctor Teeth para pacientes")]
+[assembly: AssemblyDescription("Aplicacion que permite administrar los clientes y servicios de una clinica dental. Ademas tiene la capacidad de agendar las citas.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Android_ClinicaDental.Android")]
+[assembly: AssemblyCompany("G05T")]
+[assembly: AssemblyProduct("DentalClinicAdminDocTeeth")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
