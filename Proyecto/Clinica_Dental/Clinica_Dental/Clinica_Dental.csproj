@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27C4F5E9-BB67-42C4-8BBB-77E9EE358D97}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Clinica_Dental</RootNamespace>
+    <AssemblyName>Clinica_Dental</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexión.cs" />
+    <Compile Include="DatosUsuarios.cs" />
+    <Compile Include="Form_AgendarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AgendarCita.Designer.cs">
+      <DependentUpon>Form_AgendarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CitasAgendadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CitasAgendadas.Designer.cs">
+      <DependentUpon>Form_CitasAgendadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ConsultarDatosPersonales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ConsultarDatosPersonales.Designer.cs">
+      <DependentUpon>Form_ConsultarDatosPersonales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DatosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DatosClientes.Designer.cs">
+      <DependentUpon>Form_DatosClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Herencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Herencia.Designer.cs">
+      <DependentUpon>Form_Herencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MenuAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MenuAdministrador.Designer.cs">
+      <DependentUpon>Form_MenuAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MenuClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MenuClientes.Designer.cs">
+      <DependentUpon>Form_MenuClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Registrarse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Registrarse.Designer.cs">
+      <DependentUpon>Form_Registrarse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ServiciosDisponibles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ServiciosDisponibles.Designer.cs">
+      <DependentUpon>Form_ServiciosDisponibles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_HistorialCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HistorialCitas.Designer.cs">
+      <DependentUpon>Form_HistorialCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrarse.cs" />
+    <Compile Include="Servicios.cs" />
+    <EmbeddedResource Include="Form_AgendarCita.resx">
+      <DependentUpon>Form_AgendarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CitasAgendadas.resx">
+      <DependentUpon>Form_CitasAgendadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ConsultarDatosPersonales.resx">
+      <DependentUpon>Form_ConsultarDatosPersonales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DatosClientes.resx">
+      <DependentUpon>Form_DatosClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Herencia.resx">
+      <DependentUpon>Form_Herencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MenuAdministrador.resx">
+      <DependentUpon>Form_MenuAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MenuClientes.resx">
+      <DependentUpon>Form_MenuClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Registrarse.resx">
+      <DependentUpon>Form_Registrarse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ServiciosDisponibles.resx">
+      <DependentUpon>Form_ServiciosDisponibles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_HistorialCitas.resx">
+      <DependentUpon>Form_HistorialCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
