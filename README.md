@@ -70,6 +70,7 @@ También, esta vista podrá ser administrada por la secretaria, persona la cuál
 - <a href="https://drive.google.com/file/d/1uwPxo6miAaw_ldH7AlrGUllEnNOYyf7R/view?usp=sharing"> Manual de usuario 📘 </a>
 - <a href="https://drive.google.com/file/d/1gAFFvIgU0hTSQEK34vZvSh85sQAgW_8s/view?usp=sharing"> Manual Técnico 📗 </a>
 - <a href="https://youtu.be/FYNXhroJsTc"> Video explicativo 📹 </a>
+- <a href="https://drive.google.com/file/d/1CVLctOm61yYHrKNECjHf-K7a94UshcSV/view?usp=sharing"> Logos 🎨 </a>
 
 ---
 
