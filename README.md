@@ -1,8 +1,6 @@
-# Proyecto de programación: clínica dental 💻
+# <b> Proyecto de programación: clínica dental </b>💻
 
----
-
-## Integrantes 05T 🎈
+## <b>Integrantes 05T 🎈 </b>
  ✔️  CD210488 Jairo Rafael Colocho Díaz 
 <br> ✔️  AE210567 Bryan Josué Alberto Elena
 <br> ✔️  CV210468 Oscar Rolando Cañas Valdizón
@@ -11,25 +9,22 @@
 
 ---
 
-## Antes de desarrollar
+# <b>Antes de desarrollar 😉</b>
 **Recuerde hacer siempre:**
 <br>
 1. Cambiar a rama personal _ANTES DE TRABAJAR_.
 2. Realizar un `git pull origin master` antes de iniciar para revisar si existe algun tipo de cambio en el codigo.
 3. Antes de unir (`merge`) las ramas personales con master, cree un pull request **desde _GitHub_**, señalando el tipo de cambio realizado en el repositorio y espere a que sea aprobado.
 
-Tambien debe comprobar los [requisitos de desarrollo de la aplicacion](#DevReq) antes de comenzar.
-
-
 ---
 
 ## Licencia implementada 📝
-Este proyecto esta licenciado por la **Creative Commons Attribution-ShareAlike 4.0 International License**:
+Este proyecto esta licenciado por la `Creative Commons Attribution-ShareAlike 4.0 International License`:
 <br> Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo incluso con fines comerciales, siempre que le otorguen crédito y licencian sus nuevas creaciones bajo los mismos términos. Esta licencia a menudo se compara con licencias de software de código abierto y gratuitas "copyleft". Todos los trabajos nuevos basados ​​en el suyo llevarán la misma licencia, por lo que cualquier derivado también permitirá el uso comercial. Esta es la licencia utilizada por Wikipedia y se recomienda para materiales que se beneficiarían de la incorporación de contenido de Wikipedia y proyectos con licencias similares. </br>
 
 ---
 
-## Detalles
+# <b>Detalles 🎯</b>
 
 ### *Asignacion*
 Para el desarrollo de este proyecto se nos solicitó lo siguiente:
@@ -53,40 +48,40 @@ También, esta vista podrá ser administrada por la secretaria, persona la cuál
 
 ---
 
-## Enlaces de interes 🔗
-### General 📌
+# <b>Enlaces de interes 🔗</b>
+### <b>General 📌</b>
 - <a href="https://www.notion.so/PROYECTO-C-TEDRA-FASE-1-95c19c6cd200410bb5ad1fbe29b6f0f2"> Notion ✅</a> 
 
 ---
 
-### Primera entrega: programación orientada a objetos 🔴
+### <b>Primera entrega: programación orientada a objetos 🔴</b>
 - <a > Enlace al documento 🔗 Pendiente de actualizar </a>
 
 ---
 
-### Primera entrega: modelamiento y diseño de bases de datos 🟠
+### <b>Primera entrega: modelamiento y diseño de bases de datos 🟠</b>
 - <a href="https://drive.google.com/file/d/1BDQj7G9BiJAIGOhLq3AV0GvkPttGQz_3/view?usp=sharing"> Enlace al documento 💻 Pendiente de actualizar </a>
 
 ---
 
-### Segunda entrega: programación orientada a objetos 🟡
+### <b>Segunda entrega: programación orientada a objetos 🟡</b>
 
 - <a href="https://drive.google.com/file/d/1uwPxo6miAaw_ldH7AlrGUllEnNOYyf7R/view?usp=sharing"> Manual de usuario 📘 </a>
 - <a href="https://youtu.be/FYNXhroJsTc"> Video explicativo 📹 </a>
 
 ---
 
-### Primera entrega: modelamiento y diseño de bases de datos 🟢⌛
+### <b>Primera entrega: modelamiento y diseño de bases de datos 🟢⌛</b>
 ##### A entregarse en las próximas semanas.
 
 ---
 
-### Tercera entrega: programación orientada a objetos 🔵⌛
+### <b>Tercera entrega: programación orientada a objetos 🔵⌛</b>
 ##### A entregarse en las próximas semanas.
 
 ---
 
-## Requisitos
+# <b>Requisitos🔒</b>
 
 | Nombre del Requisito | Version             |Descripcion                                                                         |
 | -------------------- | ------------------- | ---------------------------------------------------------------------------------- |
