@@ -6,6 +6,7 @@
 <br> ✔️  CV210468 Oscar Rolando Cañas Valdizón
 <br> ✔️  HM210444 Javier Enrique Hernández Márquez
 <br> ✔️  PR210566 Mercedes Guadalupe Pérez Rivas
+<br> ✔️  CV200416 Francisco Armando Ventura Cortez
 
 ---
 
@@ -55,18 +56,19 @@ También, esta vista podrá ser administrada por la secretaria, persona la cuál
 ---
 
 ### <b>Primera entrega: programación orientada a objetos 🔴</b>
-- <a > Enlace al documento 🔗 Pendiente de actualizar </a>
+- <a href="https://drive.google.com/file/d/1fyUhUzduepDXDgSvWHyfiw64SM7x4YPD/view?usp=sharing"> Enlace al documento 🔗 </a>
 
 ---
 
 ### <b>Primera entrega: modelamiento y diseño de bases de datos 🟠</b>
-- <a > Enlace al documento 💻 Pendiente de actualizar </a>
+- <a href="https://drive.google.com/file/d/1BDQj7G9BiJAIGOhLq3AV0GvkPttGQz_3/view?usp=sharing"> Enlace al documento 💻 Pendiente de actualizar </a>
 
 ---
 
 ### <b>Segunda entrega: programación orientada a objetos 🟡</b>
 
 - <a href="https://drive.google.com/file/d/1uwPxo6miAaw_ldH7AlrGUllEnNOYyf7R/view?usp=sharing"> Manual de usuario 📘 </a>
+- <a href="https://drive.google.com/file/d/1gAFFvIgU0hTSQEK34vZvSh85sQAgW_8s/view?usp=sharing"> Manual Técnico 📗 </a>
 - <a href="https://youtu.be/FYNXhroJsTc"> Video explicativo 📹 </a>
 
 ---
@@ -85,8 +87,8 @@ También, esta vista podrá ser administrada por la secretaria, persona la cuál
 
 | Nombre del Requisito | Version             |Descripcion                                                                         |
 | -------------------- | ------------------- | ---------------------------------------------------------------------------------- |
-| Windows 10 _(no NT)_ | v2004 (comp. 19041) |  `Modo de programador` activado                |
+| Windows 10 _(no NT)_ | v2004 (comp. 19041) | <a href = "https://bit.ly/3lKi5BX">Modo de programador</a> activado                |
 | Visual Studio        | 2017 o posterior    | VS 2019 o VS 2022 PRE es recomendable debido a las versiones de extensiones        |
-| Windows App SDK      | 0.8 Stable          | Disponible en `VS Marketplace`, tambien en _Extensiones > Administrar extensiones_ en Visual Studio      |
+| Windows App SDK      | 0.8 Stable          | Disponible en [VS Marketplace](https://bit.ly/3hRsR8F), tambien en _Extensiones > Administrar extensiones_ en Visual Studio      |
 | SQL Server Developer | Mas reciente (2019) | Desde SQL Server Configuration Manager, habilitar las conexiones TCP/IP con el puerto predeterminado (1433) y tambien las tuberias con nombre (Name Pipes, para transmitir informacion con nombres para evitar errores) |
 | SSMS                 | Mas reciente        | Dentro de SSMS, cambiar contraseña al usuario [sa] y ademas habilitar las conexiones con SQL Server Login (no se usara Autenticacion de Windows) y ademas habilitar conexiones remotas al servidor |
