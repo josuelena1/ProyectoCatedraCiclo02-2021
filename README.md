@@ -60,7 +60,7 @@ También, esta vista podrá ser administrada por la secretaria, persona la cuál
 ---
 
 ### <b>Primera entrega: modelamiento y diseño de bases de datos 🟠</b>
-- <a href="https://drive.google.com/file/d/1BDQj7G9BiJAIGOhLq3AV0GvkPttGQz_3/view?usp=sharing"> Enlace al documento 💻 Pendiente de actualizar </a>
+- <a > Enlace al documento 💻 Pendiente de actualizar </a>
 
 ---
 
