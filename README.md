@@ -94,6 +94,12 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 <a name = "Documentation"></a>
 
 
+Para la segunda entrega
+ 1. 📹 Video de funcionamiento: https://youtu.be/FYNXhroJsTc
+ 2. 📗  Manual de usuario: https://drive.google.com/file/d/1uwPxo6miAaw_ldH7AlrGUllEnNOYyf7R/view?usp=sharing
+ 3. 📘  Manual técnico: 
+
+
 ## Documentacion
 
 - [Notion](https://www.notion.so/PROYECTO-C-TEDRA-FASE-1-95c19c6cd200410bb5ad1fbe29b6f0f2)
@@ -142,7 +148,4 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 | SQL Server Developer | Mas reciente (2019) | Desde SQL Server Configuration Manager, habilitar las conexiones TCP/IP con el puerto predeterminado (1433) y tambien las tuberias con nombre (Name Pipes, para transmitir informacion con nombres para evitar errores) |
 | SSMS                 | Mas reciente        | Dentro de SSMS, cambiar contraseña al usuario [sa] y ademas habilitar las conexiones con SQL Server Login (no se usara Autenticacion de Windows) y ademas habilitar conexiones remotas al servidor |
 
- 
-Para la segunda entrega
- 1. 📹 Video de funcionamiento: https://youtu.be/FYNXhroJsTc
- 2. 📗  Manual de usuario: https://drive.google.com/file/d/1uwPxo6miAaw_ldH7AlrGUllEnNOYyf7R/view?usp=sharing
+
