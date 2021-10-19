@@ -150,3 +150,39 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 | SSMS                 | Mas reciente        | Dentro de SSMS, cambiar contraseña al usuario [sa] y ademas habilitar las conexiones con SQL Server Login (no se usara Autenticacion de Windows) y ademas habilitar conexiones remotas al servidor |
 
 
+
+ ### NEW README
+ 
+ # Proyecto de programación: clínica dental 💻
+---
+## Integrantes 05T 🎈
+- CD210488 Jairo Rafael Colocho Díaz
+- AE210567 Bryan Josué Alberto Elena
+- CV210468 Oscar Rolando Cañas Valdizón
+- HM210444 Javier Enrique Hernández Márquez
+- PR210566 Mercedes Guadalupe Pérez Rivas
+
+---
+## Licencia implementada 📜
+Este proyecto esta licenciado por la **Creative Commons Attribution-ShareAlike 4.0 International License**:
+<br> Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo incluso con fines comerciales, siempre que le otorguen crédito y licencian sus nuevas creaciones bajo los mismos términos. Esta licencia a menudo se compara con licencias de software de código abierto y gratuitas "copyleft". Todos los trabajos nuevos basados ​​en el suyo llevarán la misma licencia, por lo que cualquier derivado también permitirá el uso comercial. Esta es la licencia utilizada por Wikipedia y se recomienda para materiales que se beneficiarían de la incorporación de contenido de Wikipedia y proyectos con licencias similares. </br>
+
+---
+## Enlaces de interes 📎
+### General 🎉
+- <a href="https://www.notion.so/PROYECTO-C-TEDRA-FASE-1-95c19c6cd200410bb5ad1fbe29b6f0f2"> Notion ✅</a> 
+- <a href="https://drive.google.com/file/d/19PDoaEh0IAiC1CuuQlK38AqYz3Np3oh9/view?usp=sharing"> Mockups en Drive 👀 pendiente </a> 
+- <a href="https://www.canva.com/design/DAEp2Bv5ttg/n2HKD_PPKg0QNoFiSVrx6A/view?mode=prototype#p-gina-sin-t-tulo"> Mockups en Canva ✨ pendiente </a> 
+### Primera entrega: programación orientada a objetos 🎈
+- <a href="https://drive.google.com/file/d/13BDu1AQENqid5has6lyx9atEjqROy7NJ/view?usp=sharing"> Enlace al documento 🔗 </a>
+---
+### Primera entrega: modelamiento y diseño de bases de datos 🐱‍👤
+- <a href="https://drive.google.com/file/d/1BDQj7G9BiJAIGOhLq3AV0GvkPttGQz_3/view?usp=sharing"> Enlace al documento 🎊 </a>
+
+---
+### Segunda entrega: programación orientada a objetos 🍜
+- <a href="https://drive.google.com/file/d/1uwPxo6miAaw_ldH7AlrGUllEnNOYyf7R/view?usp=sharing"> Manual técnico 📗 pendiente </a>
+- <a href="https://drive.google.com/file/d/1uwPxo6miAaw_ldH7AlrGUllEnNOYyf7R/view?usp=sharing"> Manual de usuario 📘 </a>
+- <a href="https://youtu.be/FYNXhroJsTc"> Video con narrativa 📹 </a>
+- <a href="https://drive.google.com/file/d/1tJ238hyITogQuFMnCtMriLoUXBz5ti_4/view?usp=sharing"> Logos 💻 Pendiente </a>
+---
