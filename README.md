@@ -3,11 +3,11 @@
 ---
 
 ## Integrantes 05T 🎈
-- CD210488 Jairo Rafael Colocho Díaz
-- AE210567 Bryan Josué Alberto Elena
-- CV210468 Oscar Rolando Cañas Valdizón
-- HM210444 Javier Enrique Hernández Márquez
-- PR210566 Mercedes Guadalupe Pérez Rivas
+ ✔️  CD210488 Jairo Rafael Colocho Díaz 
+<br> ✔️  AE210567 Bryan Josué Alberto Elena
+<br> ✔️  CV210468 Oscar Rolando Cañas Valdizón
+<br> ✔️  HM210444 Javier Enrique Hernández Márquez
+<br> ✔️  PR210566 Mercedes Guadalupe Pérez Rivas
 
 ---
 
