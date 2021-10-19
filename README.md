@@ -94,7 +94,8 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 <a name = "Documentation"></a>
 
 
-Para la segunda entrega
+### Segunda entrega
+
  1. 📹 Video de funcionamiento: https://youtu.be/FYNXhroJsTc
  2. 📗  Manual de usuario: https://drive.google.com/file/d/1uwPxo6miAaw_ldH7AlrGUllEnNOYyf7R/view?usp=sharing
  3. 📘  Manual técnico: 
