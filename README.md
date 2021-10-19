@@ -141,3 +141,7 @@ Esta licencia permite que otros mezclen, adapten y desarrollen sobre su trabajo 
 | Windows App SDK      | 0.8 Stable          | Disponible en [VS Marketplace](https://bit.ly/3hRsR8F), tambien en _Extensiones > Administrar extensiones_ en Visual Studio      |
 | SQL Server Developer | Mas reciente (2019) | Desde SQL Server Configuration Manager, habilitar las conexiones TCP/IP con el puerto predeterminado (1433) y tambien las tuberias con nombre (Name Pipes, para transmitir informacion con nombres para evitar errores) |
 | SSMS                 | Mas reciente        | Dentro de SSMS, cambiar contraseña al usuario [sa] y ademas habilitar las conexiones con SQL Server Login (no se usara Autenticacion de Windows) y ademas habilitar conexiones remotas al servidor |
+
+ 
+Para la segunda entrega
+ 1. Video de funcionamiento: https://youtu.be/FYNXhroJsTc
