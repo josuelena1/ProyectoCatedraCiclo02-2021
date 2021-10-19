@@ -85,8 +85,8 @@ También, esta vista podrá ser administrada por la secretaria, persona la cuál
 
 | Nombre del Requisito | Version             |Descripcion                                                                         |
 | -------------------- | ------------------- | ---------------------------------------------------------------------------------- |
-| Windows 10 _(no NT)_ | v2004 (comp. 19041) | <a `Modo de programador` activado                |
+| Windows 10 _(no NT)_ | v2004 (comp. 19041) |  `Modo de programador` activado                |
 | Visual Studio        | 2017 o posterior    | VS 2019 o VS 2022 PRE es recomendable debido a las versiones de extensiones        |
-| Windows App SDK      | 0.8 Stable          | Disponible en [VS Marketplace](https://bit.ly/3hRsR8F), tambien en _Extensiones > Administrar extensiones_ en Visual Studio      |
+| Windows App SDK      | 0.8 Stable          | Disponible en `VS Marketplace`, tambien en _Extensiones > Administrar extensiones_ en Visual Studio      |
 | SQL Server Developer | Mas reciente (2019) | Desde SQL Server Configuration Manager, habilitar las conexiones TCP/IP con el puerto predeterminado (1433) y tambien las tuberias con nombre (Name Pipes, para transmitir informacion con nombres para evitar errores) |
 | SSMS                 | Mas reciente        | Dentro de SSMS, cambiar contraseña al usuario [sa] y ademas habilitar las conexiones con SQL Server Login (no se usara Autenticacion de Windows) y ademas habilitar conexiones remotas al servidor |
