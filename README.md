@@ -28,6 +28,7 @@ Antes de abrir la aplicacion deberan seguir los pasos enlistados [aqui](#devsReq
 ### Seccion Principal
 - [Acerca del proyecto](#about)
   - [Metodo de Instalacion (requiere Visual Studio)](#install)
+- [Documentacion](#docs)
 
 ### Seccion desarrolladores :computer:
 - [Requisitos para desarolladores](#devsReq)
@@ -70,6 +71,13 @@ Para instalar esta aplicacion se requiere que se sigan los siguientes pasos y ad
 
 
 <br/>
+
+<a name="docs"></a>
+
+# Documentacion
+
+- [:calendar: Microsoft Planner](https://tasks.office.com/udb.edu.sv/es-ES/Home/Planner/#/plantaskboard?groupId=45f09a83-7b03-440a-8197-8a9e32247d0f&planId=OSrF55ygaEqVLTcfCHcIJWQACdP-)
+- [:camera_flash: Video Demostrativo (YouTube)](https://youtu.be/2PRnrlEgUfo)
 
 
 <a name="devsReq"></a>
