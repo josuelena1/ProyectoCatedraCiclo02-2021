@@ -74,13 +74,11 @@ También, esta vista podrá ser administrada por la secretaria, persona la cuál
 
 ---
 
-### <b>Primera entrega: modelamiento y diseño de bases de datos 🟢⌛</b>
-##### A entregarse en las próximas semanas.
+### <b>Entrega final: MDB y POO 🟢⌛</b>
+##### Defensa realizada el viernes 18 de noviembre de 2021.
+##### En este caso ya habíamos terminado los manuales en las entregas anteriores, por tanto sólo nos correspondía la defensa final.
 
----
 
-### <b>Tercera entrega: programación orientada a objetos 🔵⌛</b>
-##### A entregarse en las próximas semanas.
 
 ---
 
