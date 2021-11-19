@@ -1,0 +1,39 @@
+﻿<Page
+    x:Name="page"
+    x:Class="Windows_ClinicaDental.BeforeLogin.ReqCheckPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Windows_ClinicaDental.BeforeLogin"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#dbeff9" RequestedTheme="Light">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+            <Image Source="/Resources/logo-long-transparent.png" Width="723" Height="324" x:Name="LogoImage"/>
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                <TextBlock Text="Bienvenido al administrador" FontSize="30"/>
+                <TextBlock Text="Espera un momento mientras iniciamos el sistema" FontSize="24"/>
+                <TextBlock Text="Recomendamos usar esta ventana de forma&#xa;maximizada para la mejor calidad de visualizacion"
+                           FontSize="20"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" x:Name="errorBox" Visibility="Collapsed"
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    CornerRadius="7" Background="IndianRed" Height="Auto">
+            <StackPanel Orientation="Horizontal" Margin="15,15">
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xeb90;"/>
+                <TextBlock Text="Ocurrio un error al iniciar" FontSize="18" FontWeight="SemiBold" Margin="15,0"/>
+            </StackPanel>
+            <TextBlock x:Name="errorInfo" Margin="15,15"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+            <controls:ProgressBar Width="300" IsIndeterminate="True"
+                                  x:Name="progressBar" Margin="20"/>
+            <TextBlock Text="Current Process" x:Name="actualProcessInfo"
+                       VerticalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>

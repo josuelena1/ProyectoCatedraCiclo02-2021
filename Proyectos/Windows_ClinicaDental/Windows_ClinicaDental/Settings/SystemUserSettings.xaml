@@ -1,0 +1,150 @@
+﻿<Page
+    x:Class="Windows_ClinicaDental.Settings.SystemUserSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Windows_ClinicaDental.Settings"
+    xmlns:local1="using:Windows_ClinicaDental"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="1280">
+
+    <ScrollViewer x:Name="scrollView" VerticalScrollBarVisibility="Auto" VerticalScrollMode="Auto">
+        <StackPanel Orientation="Vertical" Margin="20">
+            <!--#region SystemUsers-->
+            <StackPanel Orientation="Vertical" CornerRadius="11" BorderBrush="Gray" BorderThickness="1"
+                            Background="{ThemeResource AppBarBackgroundThemeBrush}">
+                <StackPanel Orientation="Vertical" Margin="20">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Usuarios del Sistema" FontSize="30" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                        <CommandBar DefaultLabelPosition="Right" Margin="45,0,0,0" CornerRadius="11" Background="Transparent">
+                            <AppBarButton x:Name="addSU" Icon="Add" Label="Añadir"/>
+                            <AppBarSeparator/>
+                            <AppBarButton x:Name="modifySU" Icon="Edit" Label="Modificar" IsEnabled="False"/>
+                            <AppBarButton x:Name="deleteSU" Icon="Delete" Label="Eliminar" IsEnabled="False"/>
+                        </CommandBar>
+                    </StackPanel>
+                    <Grid BorderBrush="DarkGray" BorderThickness="1" Margin="0,15,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.25*"/>
+                            <ColumnDefinition Width="0.25*"/>
+                            <ColumnDefinition Width="0.15*"/>
+                            <ColumnDefinition Width="0.15*"/>
+                            <ColumnDefinition Width="0.1*"/>
+                            <ColumnDefinition Width="0.1*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Nombres" Grid.Column="0"/>
+                        <TextBlock Text="Apellidos" Grid.Column="1"/>
+                        <TextBlock Text="Posicion Laboral" Grid.Column="2"/>
+                        <TextBlock Text="Rol" Grid.Column="3"/>
+                        <TextBlock Text="Celular" Grid.Column="4"/>
+                        <TextBlock Text="Telefono" Grid.Column="5"/>
+                    </Grid>
+                    <ListView x:Name="sysUsersList" Height="400" SelectionChanged="sysUsersList_SelectionChanged"
+                              ScrollViewer.VerticalScrollMode="Enabled">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.25*"/>
+                                        <ColumnDefinition Width="0.25*"/>
+                                        <ColumnDefinition Width="0.15*"/>
+                                        <ColumnDefinition Width="0.15*"/>
+                                        <ColumnDefinition Width="0.1*"/>
+                                        <ColumnDefinition Width="0.1*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="{Binding Name}" Grid.Column="0"/>
+                                    <TextBlock Text="{Binding LastName}" Grid.Column="1"/>
+                                    <TextBlock Text="{Binding Position}" Grid.Column="2"/>
+                                    <TextBlock Text="{Binding Role}" Grid.Column="3"/>
+                                    <TextBlock Text="{Binding Cellphone}" Grid.Column="4"/>
+                                    <TextBlock Text="{Binding LandLinePhone}" Grid.Column="5"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
+            </StackPanel>
+            <!--#endregion-->
+            <StackPanel Orientation="Vertical" Margin="0,20,0,0" CornerRadius="11" BorderBrush="Gray" BorderThickness="1">
+                <controls:InfoBar IsOpen="True" Severity="Warning" IsClosable="False" HorizontalAlignment="Stretch"
+                                  Title="Advertencia" 
+                                  Message="Si eliminas una 'Posicion Laboral' o un 'Rol', automaticamente estaras eliminando al usuario con ese rol. Ten cuidado."/>
+            </StackPanel>
+            <!--#region UsersSettings-->
+            <Grid Margin="0,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.395*"/>
+                    <ColumnDefinition Width="0.01*"/>
+                    <ColumnDefinition Width="0.595*"/>
+                </Grid.ColumnDefinitions>
+                <!--#region JobPosition-->
+                <StackPanel Orientation="Vertical" BorderBrush="Gray" BorderThickness="1" CornerRadius="11"
+                            Background="{ThemeResource AppBarBackgroundThemeBrush}" Grid.Column="0">
+                    <StackPanel Orientation="Vertical" Margin="20">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Posiciones Laborales" FontSize="26" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                            <CommandBar DefaultLabelPosition="Right" Margin="15,0,0,0" CornerRadius="11" Background="Transparent">
+                                <AppBarButton x:Name="addPL" Icon="Add" Label="Añadir"/>
+                                <AppBarSeparator/>
+                                <AppBarButton x:Name="deletePL" Icon="Delete" Label="Eliminar" IsEnabled="False"/>
+                            </CommandBar>
+                        </StackPanel>
+                        <Grid BorderBrush="DarkGray" BorderThickness="1" Margin="0,15,0,0">
+                            <TextBlock Text="Posicion Laboral"/>
+                        </Grid>
+                        <ListView x:Name="JobPositionsList" Height="300" Margin="0,0,0,20"
+                              ScrollViewer.VerticalScrollMode="Enabled" SelectionChanged="JobPositionsList_SelectionChanged">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Position}"/>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackPanel>
+                </StackPanel>
+                <!--#endregion-->
+                <!--#region Roles-->
+                <StackPanel Orientation="Vertical" BorderBrush="Gray" BorderThickness="1" CornerRadius="11"
+                            Background="{ThemeResource AppBarBackgroundThemeBrush}" Grid.Column="2">
+                    <StackPanel Orientation="Vertical" Margin="20">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Roles del Sistema" FontSize="26" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                            <CommandBar DefaultLabelPosition="Right" Margin="45,0,0,0" CornerRadius="11" Background="Transparent">
+                                <AppBarButton x:Name="addR" Icon="Add" Label="Añadir"/>
+                                <AppBarSeparator/>
+                                <AppBarButton x:Name="deleteR" Icon="Delete" Label="Eliminar" IsEnabled="False"/>
+                            </CommandBar>
+                        </StackPanel>
+                        <Grid BorderBrush="DarkGray" BorderThickness="1" Margin="0,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.3*"/>
+                                <ColumnDefinition Width="0.7*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Nombre del Rol" Grid.Column="0"/>
+                            <TextBlock Text="Descripcion" Grid.Column="1"/>
+                        </Grid>
+                        <ListView x:Name="RolesList" Height="300" Margin="0,0,0,20"
+                              ScrollViewer.VerticalScrollMode="Enabled" SelectionChanged="RolesList_SelectionChanged">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.3*"/>
+                                            <ColumnDefinition Width="0.7*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text="{Binding Name}" Grid.Column="0"/>
+                                        <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Grid.Column="1"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackPanel>
+                </StackPanel>
+                <!--#endregion-->
+            </Grid>
+            <!--#endregion-->
+        </StackPanel>
+    </ScrollViewer>
+</Page>

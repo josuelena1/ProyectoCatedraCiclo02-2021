@@ -1,0 +1,204 @@
+﻿<Page
+    x:Class="Windows_ClinicaDental.Datos.PatientsDataPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Windows_ClinicaDental.Datos"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="1280"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <ScrollViewer VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto" x:Name="scrollView">
+        <StackPanel Orientation="Vertical">
+            <!--#region Allergies-->
+            <StackPanel Orientation="Vertical" Margin="20" CornerRadius="11" BorderThickness="1" BorderBrush="Gray"
+                    Background="{ThemeResource AppBarBackgroundThemeBrush}">
+                <controls:InfoBar IsOpen="True" IsClosable="False" Severity="Warning"
+                                  Title="Advertencia"
+                                  Message="Cuidado. Al eliminar una alergia estarias eliminando tambien al paciente."/>
+                <StackPanel Orientation="Vertical" Margin="20">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Alergias de Pacientes" FontSize="30" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Grid Margin="0,15,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.35*"/>
+                            <ColumnDefinition Width="0.02*"/>
+                            <ColumnDefinition Width="0.63*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Vertical" Grid.Column="0">
+                            <TextBlock Text="Elementos Actuales" FontSize="20" FontWeight="SemiLight"/>
+                            <ListView x:Name="listAllergies" CanDragItems="True" CanReorderItems="False" AllowDrop="False"
+                          DragItemsStarting="listAllergies_DragItemsStarting" Height="300" ScrollViewer.VerticalScrollMode="Enabled">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackPanel>
+                        <Pivot Grid.Column="2" Margin="0,-15,0,0">
+                            <Pivot.Title>
+                                <TextBlock Text="Acciones Disponibles" FontSize="20" FontWeight="SemiLight"/>
+                            </Pivot.Title>
+                            <PivotItem Header="Añadir">
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="Instrucciones:" FontWeight="SemiBold"/>
+                                    <TextBlock Text="Solamente necesitas colocar el nombre del elemento a agregar."/>
+                                    <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                                        <TextBox x:Name="toAdd" Header="Nuevo elemento:" PlaceholderText="Alergia" Width="192"/>
+                                        <Button x:Name="addToList" Style="{StaticResource AccentButtonStyle}" Click="addToList_Click"
+                                    Margin="10,0,0,0" VerticalAlignment="Bottom">
+                                            <StackPanel Orientation="Horizontal">
+                                                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe82e;"/>
+                                                <TextBlock Text="Agregar a la lista" Margin="5,0,0,0"/>
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="removeFromList" Click="removeFromList_Click"
+                                    Margin="10,0,0,0" VerticalAlignment="Bottom">
+                                            <StackPanel Orientation="Horizontal">
+                                                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe74d;"/>
+                                                <TextBlock Text="Eliminar" Margin="5,0,0,0"/>
+                                            </StackPanel>
+                                        </Button>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" Margin="0,15">
+                                        <TextBlock Text="Elementos por agregar" FontSize="16" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                                        <Button x:Name="finishAndUpdate" Background="IndianRed"  Click="finishAndUpdate_Click"
+                                    Margin="10,0,0,0" VerticalAlignment="Bottom">
+                                            <StackPanel Orientation="Horizontal">
+                                                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe78c;"/>
+                                                <TextBlock Text="Finalizar y guardar" Margin="5,0,0,0"/>
+                                            </StackPanel>
+                                        </Button>
+                                    </StackPanel>
+                                    <ListView x:Name="addList" CanDragItems="False" CanReorderItems="False" AllowDrop="False" 
+                                              Margin="0,10,0,0" CornerRadius="11" BorderBrush="Gray" BorderThickness="1" 
+                                                HorizontalAlignment="Left" Width="256" Height="200" 
+                                              SelectionChanged="addList_SelectionChanged">
+                                        <ListView.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding}"/>
+                                            </DataTemplate>
+                                        </ListView.ItemTemplate>
+                                    </ListView>
+                                </StackPanel>
+                            </PivotItem>
+                            <PivotItem Header="Eliminar">
+                                <StackPanel Orientation="Vertical">
+                                    <RichTextBlock TextWrapping="Wrap">
+                                        <Paragraph>
+                                            <Bold>Instrucciones:</Bold>
+                                            <LineBreak/> Desde la lista de elementos existentes, arrastra los elementos que deseas eliminar
+                                            <LineBreak/> hacia la lista de elementos por eliminar y cuando estes listo, solamente presiona el boton
+                                            <Italic>"Eliminar"</Italic> .
+                                            <LineBreak/>
+                                            <Bold>Nota:</Bold> Solamente los elementos que esten en la lista se eliminaran.
+                                        </Paragraph>
+                                    </RichTextBlock>
+                                    <ListView x:Name="deleteList" CanDragItems="False" CanReorderItems="False" AllowDrop="True"
+                                  Margin="0,10,0,0" CornerRadius="11" BorderBrush="Gray" BorderThickness="1" 
+                                  HorizontalAlignment="Left" Width="256" Height="200" 
+                                  Drop="deleteList_Drop" DragOver="deleteList_DragOver">
+                                        <ListView.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding}"/>
+                                            </DataTemplate>
+                                        </ListView.ItemTemplate>
+                                    </ListView>
+                                    <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                                        <Button x:Name="clear" Style="{StaticResource AccentButtonStyle}" Click="clear_Click"
+                                    VerticalAlignment="Bottom">
+                                            <StackPanel Orientation="Horizontal">
+                                                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe75c;"/>
+                                                <TextBlock Text="Limpiar" Margin="5,0,0,0"/>
+                                            </StackPanel>
+                                        </Button>
+                                        <Button x:Name="finishAndRemove" Style="{StaticResource AccentButtonStyle}" Click="finishAndRemove_Click"
+                                    Margin="5,0,0,0" VerticalAlignment="Bottom">
+                                            <StackPanel Orientation="Horizontal">
+                                                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xecc9;"/>
+                                                <TextBlock Text="Finalizar y remover" Margin="5,0,0,0"/>
+                                            </StackPanel>
+                                        </Button>
+                                    </StackPanel>
+                                </StackPanel>
+                            </PivotItem>
+                        </Pivot>
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+            <!--#endregion-->
+            <!--#region Treatments-->
+            <StackPanel Orientation="Vertical" Margin="20,0,20,20" CornerRadius="11" BorderThickness="1" BorderBrush="Gray"
+                    Background="{ThemeResource AppBarBackgroundThemeBrush}">
+                <controls:InfoBar IsOpen="True" IsClosable="False" Severity="Warning"
+                                  Title="Advertencia"
+                                  Message="Cuidado. Al eliminar un tratamiento estarias eliminando tambien a los pacientes y citas ligadas a ellas."/>
+                <StackPanel Orientation="Vertical" Margin="20">
+                    <StackPanel Orientation="Vertical">
+                        <Grid>
+                            <TextBlock Text="Tratamientos" FontSize="30" FontWeight="SemiBold" HorizontalAlignment="Left"/>
+                            <CommandBar Background="Transparent" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <AppBarButton Icon="Add" x:Name="add" Click="add_Click" ToolTipService.ToolTip="Agregar nuevo elemento"/>
+                                <AppBarSeparator/>
+                                <AppBarButton Icon="Edit" x:Name="edit" Click="edit_Click" ToolTipService.ToolTip="Editar elemento seleccionado"/>
+                                <AppBarButton Icon="Delete" x:Name="delete" Click="delete_Click" ToolTipService.ToolTip="Eliminar elemento seleccionado"/>
+                            </CommandBar>
+                        </Grid>
+                    </StackPanel>
+                    <Grid Margin="0,15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.63*"/>
+                            <ColumnDefinition Width="0.02*"/>
+                            <ColumnDefinition Width="0.35*"/>
+                        </Grid.ColumnDefinitions>
+                        <!--#region Lista Actual-->
+                        <StackPanel Orientation="Vertical" Grid.Column="0">
+                            <TextBlock Text="Elementos Actuales" FontSize="24" FontWeight="SemiLight"/>
+                            <StackPanel Orientation="Horizontal" BorderBrush="White" BorderThickness="1">
+                                <TextBlock Text="Nombre" Width="250"/>
+                                <TextBlock Text="Precio" Width="125"/>
+                                <TextBlock Text="Descripcion" Width="300"/>
+                            </StackPanel>
+                            <ListView x:Name="listTreatments" CanDrag="False" AllowDrop="False" 
+                                      SelectionChanged="listTreatments_SelectionChanged" Height="300" ScrollViewer.VerticalScrollMode="Enabled">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Margin="0,10">
+                                            <TextBlock Text="{Binding Name}" Width="250"/>
+                                            <TextBlock Text="{Binding Price}" Width="125"/>
+                                            <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Width="300"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackPanel>
+                        <!--#endregion-->
+                        <!--#region Modificador de datos-->
+                        <StackPanel Orientation="Vertical" x:Name="dataModifiers" Visibility="Visible" Grid.Column="2">
+                            <TextBlock Text="Informacion de tratamiento" FontSize="24" FontWeight="SemiLight"/>
+                            <Grid Margin="0,15,0,0">
+                                <TextBox x:Name="nameT" Width="208" HorizontalAlignment="Left"
+                                     Header="Nombre del tratamiento" PlaceholderText="Tratamiento"/>
+                                <controls:NumberBox x:Name="priceT" Minimum="0" Header="Precio"
+                                                PlaceholderText="0.00" Width="128" HorizontalAlignment="Right"/>
+                            </Grid>
+                            <TextBox Margin="0,15,0,0" x:Name="descriptionT" Header="Descripcion del tratamiento" 
+                                     PlaceholderText="Tratamiento" TextWrapping="Wrap" AcceptsReturn="False"/>
+                            <Button x:Name="finishEdit" Style="{ThemeResource AccentButtonStyle}" 
+                                    Margin="0,20,0,0" Click="finishEdit_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xecc8;"/>
+                                    <TextBlock Text="Guardar" Margin="5,0,0,0"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel> 
+                        <!--#endregion-->
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+            <!--#endregion-->
+        </StackPanel>
+    </ScrollViewer>
+</Page>

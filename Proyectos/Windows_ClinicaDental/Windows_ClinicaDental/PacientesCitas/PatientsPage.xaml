@@ -1,0 +1,109 @@
+﻿<Page
+    x:Class="Windows_ClinicaDental.PacientesCitas.PatientsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Windows_ClinicaDental.PacientesCitas"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Orientation="Vertical" ScrollViewer.VerticalScrollMode="Enabled">
+        <StackPanel Orientation="Vertical" Margin="20" BorderBrush="Gray" BorderThickness="1" CornerRadius="11"
+                    Background="{ThemeResource AppBarBackgroundThemeBrush}">
+            <StackPanel Orientation="Vertical" Margin="20">
+                <Grid>
+                    <TextBlock Text="Pacientes" FontWeight="SemiBold" FontSize="30" HorizontalAlignment="Left"/>
+                    <CommandBar x:Name="controlsBar" HorizontalAlignment="Right">
+                        <AppBarButton Name="add" Icon="AddFriend" ToolTipService.ToolTip="Agregar"/>
+                        <AppBarSeparator/>
+                        <AppBarButton Name="viewEdit" Icon="View" ToolTipService.ToolTip="Ver y editar"/>
+                        <AppBarButton Name="delete" Icon="Delete" ToolTipService.ToolTip="Eliminar"/>
+                    </CommandBar>
+                </Grid>
+                <Grid Margin="0,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.35*"/>
+                        <ColumnDefinition Width="0.02*"/>
+                        <ColumnDefinition Width="0.63*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Vertical" Grid.Column="0">
+                        <TextBlock Text="Lista de Pacientes" FontSize="24" FontWeight="SemiLight"/>
+                        <ListView x:Name="patientsList" Margin="0,10,0,0" SelectionChanged="patientsList_SelectionChanged"
+                                  Height="450" ScrollViewer.VerticalScrollMode="Enabled">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Vertical" Margin="10">
+                                        <TextBlock Text="{Binding Name}" FontSize="18" FontWeight="SemiBold"/>
+                                        <TextBlock Text="{Binding Treatments}" FontSize="14"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Column="2" x:Name="infoP"
+                                Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+                                BorderBrush="Gray" BorderThickness="1" CornerRadius="11">
+                        <StackPanel Orientation="Vertical" Grid.Column="2" Margin="15">
+                            <TextBlock Text="Informacion del paciente" FontSize="24" FontWeight="SemiLight"/>
+                            <!--name Grid--><Grid Margin="0,10,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.49*"/>
+                                    <ColumnDefinition Width="0.02*"/>
+                                    <ColumnDefinition Width="0.49*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox x:Name="nameP" Grid.Column="0" Header="Nombres del Paciente"/>
+                                <TextBox x:Name="lastNameP" Grid.Column="2" Header="Apellidos del Paciente"/>
+                            </Grid>
+                            <!--Secondary Info Grid--><Grid Margin="0,10,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.39*"/>
+                                    <ColumnDefinition Width="0.02*"/>
+                                    <ColumnDefinition Width="0.59*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="0.49*"/>
+                                        <RowDefinition Height="0.02*"/>
+                                        <RowDefinition Height="0.49*"/>
+                                    </Grid.RowDefinitions>
+                                    <ComboBox x:Name="sexP" Header="Sexo" HorizontalAlignment="Stretch" Grid.Row="0" PlaceholderText="Seleccione una opcion"/>
+                                    <CalendarDatePicker x:Name="dateBirthP" Header="Fecha de Nacimiento" Grid.Row="2" HorizontalAlignment="Stretch"/>
+                                </Grid>
+                                <TextBox x:Name="addressP" Grid.Column="2" Header="Direccion" TextWrapping="Wrap"
+                                         VerticalAlignment="Stretch" IsSpellCheckEnabled="True" AcceptsReturn="False"/>
+                            </Grid>
+                            <!--Phones Grid--><Grid Margin="0,10,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.49*"/>
+                                    <ColumnDefinition Width="0.02*"/>
+                                    <ColumnDefinition Width="0.49*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox x:Name="cellPhoneP" Grid.Column="0" Header="Telefono celular" MaxLength="15"/>
+                                <TextBox x:Name="landLinePhoneP" Grid.Column="2" Header="Telefono fijo" MaxLength="15"/>
+                            </Grid>
+                            <!--Medical Info Grid--><Grid Margin="0,10,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.49*"/>
+                                    <ColumnDefinition Width="0.02*"/>
+                                    <ColumnDefinition Width="0.49*"/>
+                                </Grid.ColumnDefinitions>
+                                <ComboBox x:Name="treatmentsP" Header="Tratamiento programado" 
+                                          PlaceholderText="Seleccione una opcion" HorizontalAlignment="Stretch"/>
+                                <ComboBox x:Name="allergiesP" Header="Alergia Informada" 
+                                          PlaceholderText="Seleccione una opcion" HorizontalAlignment="Stretch" Grid.Column="2"/>
+                            </Grid>
+
+                            <Button Name="save" Style="{StaticResource AccentButtonStyle}" Margin="0,10" Click="save_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe792;"/>
+                                    <TextBlock Text="Guardar" Margin="5,0,0,0"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Page>

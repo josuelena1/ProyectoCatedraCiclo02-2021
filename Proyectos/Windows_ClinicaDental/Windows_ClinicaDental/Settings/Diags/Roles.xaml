@@ -1,0 +1,19 @@
+﻿<ContentDialog
+    x:Class="Windows_ClinicaDental.Settings.Diags.Roles"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Windows_ClinicaDental.Settings.Diags"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Roles"
+    PrimaryButtonText="Guardar"
+    CloseButtonText="Cancelar"
+    DefaultButton="Primary"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick">
+    <StackPanel Orientation="Vertical" Margin="20">
+        <TextBox x:Name="Name" Header="Nombre del rol" PlaceholderText="Nuevo Rol"/>
+        <TextBox x:Name="Description" Header="Descripcion" PlaceholderText="Multilinea sin limites" 
+                 TextWrapping="Wrap" AcceptsReturn="False" IsSpellCheckEnabled="True" Margin="0,15,0,0"/>
+    </StackPanel>
+</ContentDialog>

@@ -1,0 +1,7 @@
+MainPackage=C:\Users\oscar\Desktop\U - CICLO II\ProyectoPOO_MDB\Proyectos\Windows_ClinicaDental\Windows_ClinicaDental\bin\x64\Release\Windows_ClinicaDental_1.0.6.0_x64.msix
+SymbolPackage=C:\Users\oscar\Desktop\U - CICLO II\ProyectoPOO_MDB\Proyectos\Windows_ClinicaDental\Windows_ClinicaDental\obj\x64\Release\Symbols\Windows_ClinicaDental_1.0.6.0_x64.appxsym
+ResourcePack=C:\Users\oscar\Desktop\U - CICLO II\ProyectoPOO_MDB\Proyectos\Windows_ClinicaDental\Windows_ClinicaDental\bin\x64\Release\Windows_ClinicaDental_1.0.6.0_language-es.msix
+ResourcePack=C:\Users\oscar\Desktop\U - CICLO II\ProyectoPOO_MDB\Proyectos\Windows_ClinicaDental\Windows_ClinicaDental\bin\x64\Release\Windows_ClinicaDental_1.0.6.0_scale-100.msix
+ResourcePack=C:\Users\oscar\Desktop\U - CICLO II\ProyectoPOO_MDB\Proyectos\Windows_ClinicaDental\Windows_ClinicaDental\bin\x64\Release\Windows_ClinicaDental_1.0.6.0_scale-125.msix
+ResourcePack=C:\Users\oscar\Desktop\U - CICLO II\ProyectoPOO_MDB\Proyectos\Windows_ClinicaDental\Windows_ClinicaDental\bin\x64\Release\Windows_ClinicaDental_1.0.6.0_scale-150.msix
+ResourcePack=C:\Users\oscar\Desktop\U - CICLO II\ProyectoPOO_MDB\Proyectos\Windows_ClinicaDental\Windows_ClinicaDental\bin\x64\Release\Windows_ClinicaDental_1.0.6.0_scale-400.msix

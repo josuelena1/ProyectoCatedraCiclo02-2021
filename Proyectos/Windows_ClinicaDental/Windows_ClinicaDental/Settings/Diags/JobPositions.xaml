@@ -1,0 +1,17 @@
+﻿<ContentDialog
+    x:Class="Windows_ClinicaDental.Settings.Diags.JobPositions"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Windows_ClinicaDental.Settings.Diags"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Posiciones Laborales"
+    PrimaryButtonText="Guardar"
+    CloseButtonText="Cancelar"
+    DefaultButton="Primary"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick">
+    <StackPanel Orientation="Vertical" Margin="20">
+        <TextBox x:Name="JobPosition" Header="Posicion Laboral" PlaceholderText="Nombre de la nueva posicion"/>
+    </StackPanel>
+</ContentDialog>
