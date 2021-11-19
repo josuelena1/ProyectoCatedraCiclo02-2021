@@ -77,7 +77,8 @@ Para instalar esta aplicacion se requiere que se sigan los siguientes pasos y ad
 # Documentacion
 
 - [:calendar: Microsoft Planner](https://tasks.office.com/udb.edu.sv/es-ES/Home/Planner/#/plantaskboard?groupId=45f09a83-7b03-440a-8197-8a9e32247d0f&planId=OSrF55ygaEqVLTcfCHcIJWQACdP-)
-- [:camera_flash: Video Demostrativo (YouTube)](https://youtu.be/2PRnrlEgUfo)
+- [:movie_camera: Video Demostrativo (YouTube)](https://youtu.be/2PRnrlEgUfo)
+- [:camera_flash: Capturas de pantalla](https://github.com/josuelena1/ProyectoCatedraCiclo02-2021/tree/Oscar/Imagenes%20Proyecto/Capturas)
 
 
 <a name="devsReq"></a>
